@@ -9,11 +9,6 @@ import (
 	survey "gopkg.in/AlecAivazis/survey.v1"
 )
 
-func defaultForJenkins() string {
-	fmt.Println("jenkins url:", viper.AllKeys())
-	return viper.GetString("jenkins-url")
-}
-
 func bindEnvs(param string, usage string) {
 	err := viper.BindEnv(param)
 	if err != nil {
@@ -101,5 +96,5 @@ func main() {
 		return
 	}
 
-	fmt.Printf("%s %s.", answers.JenkinsURL, answers.JenkinsUser)
+	fmt.Printf("answers: %+v\n", answers)
 }
