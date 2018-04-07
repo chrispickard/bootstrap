@@ -2,8 +2,8 @@
 PREFIX?=$(shell pwd)
 
 # Setup name variables for the package/tool
-NAME := weather
-PKG := github.com/jessfraz/$(NAME)
+NAME := bootstrap
+PKG := github.com/chrispickard/$(NAME)
 
 # Set any default go build tags
 BUILDTAGS :=
