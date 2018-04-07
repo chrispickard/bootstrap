@@ -1,1 +1,8 @@
 * Bootstrap
+  Bootstrap a Jenkins job on a generic cluster
+** Bootstrap Requirements
+** Target Requirements
+   - Git Repo with:
+     - Jenkinsfile
+     - Dockerfile
+   - Docker 17.05
