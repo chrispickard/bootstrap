@@ -16,7 +16,7 @@ func bindEnvs(param string, usage string) {
 	}
 	replacer := strings.NewReplacer("-", "_")
 	viper.SetEnvKeyReplacer(replacer)
-	pflag.String(paam, "", usage)
+	pflag.String(param, "", usage)
 }
 
 func init() {
